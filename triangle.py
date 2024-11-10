@@ -7,10 +7,10 @@ c = int(input("enter the third side's size: "))
 #process
 
 
-if (a + b <= c) or (a + c <= b) or (b + c <= a) :
-    result = "NO"
-else:
+if (a + b >= c) and (a + c >= b) and (b + c >= a) :
     result = "YES"
+else:
+    result = "NO"
 
 #output
 
